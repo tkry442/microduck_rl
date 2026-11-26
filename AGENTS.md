@@ -47,6 +47,8 @@ Never launch a long run without one.
   gate + Hub upload. Contract = `docs/policy-manifest.md` in the `microduck` repo; only
   constant-command episodic/perpetual policies are publishable (phase/posture-flag are the set's).
 - `scripts/` — export wrapper, infer, sim2real comparison, wandb helpers.
+- `scripts/sysid/` + `actuator/xc330.py` — XC330 pendulum identification with BAM (record on
+  the Pi, fit on the PC, registers BAM actuator `"xc330"`). Guide: `docs/xc330-sysid.md`.
 - `tests/` — cfg-invariant and mdp-function regression tests (CPU, no GPU needed).
 
 ## Invariants — do not break these
